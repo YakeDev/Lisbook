@@ -1,17 +1,17 @@
 # LisBook - A Simple Audio Book Player
 
-
 <div align="center">
 
-  
 ![Purple Abstract A Letter Free Logo](https://github.com/user-attachments/assets/3d283391-9e0c-4e34-b302-eb96ea4d159c)
 
 </div>
 
 ## Description
-LisBook is a straightforward audiobook player designed for simplicity and ease of use. With LisBook, you can listen to your favorite books in MP3 format. The app provides essential playback features such as play, pause, stop, and the ability to skip chapters. You can also adjust playback speed and volume to suit your listening preferences. 
+
+LisBook is a straightforward audiobook player designed for simplicity and ease of use. With LisBook, you can listen to your favorite books in MP3 format. The app provides essential playback features such as play, pause, stop, and the ability to skip chapters. You can also adjust playback speed and volume to suit your listening preferences.
 
 ### Key Features:
+
 - **Play/Pause**: Start or pause your audiobook anytime.
 - **Stop**: Stop the audio playback and reset the position.
 - **Skip Chapters**: Easily navigate between chapters.
@@ -23,13 +23,14 @@ LisBook is all about simplicity and convenience, making your audiobook experienc
 
 ## Screenshots
 
-![LisBook Screenshot](Images/SC2.png)
+![LisBook Screenshot](/Images/Lisbook-App-ScreeShot.jpg)
 
 ## How to Contribute to LisBook During Hacktoberfest 🎉🎃🎃
 
 We’re thrilled to be part of Hacktoberfest! You can join us in improving and growing LisBook by contributing during this event.
 
 ### Ways to Contribute:
+
 - **Fixing Bugs**: Spot any bugs? Help us squash them!
 - **Improving UI**: Have design ideas? Enhance the look and feel of LisBook.
 - **Adding New Features**: Got ideas for new features? Feel free to implement them.
@@ -37,6 +38,7 @@ We’re thrilled to be part of Hacktoberfest! You can join us in improving and g
 - **Improving Documentation**: Good with words? Help us improve the clarity and quality of our documentation.
 
 ### Steps to Contribute:
+
 1. **Fork this Repository**: Click the "Fork" button at the top of this repository.
 2. **Clone Your Fork**: Use `git clone` to clone your fork to your local machine.
 
@@ -48,6 +50,7 @@ We’re thrilled to be part of Hacktoberfest! You can join us in improving and g
 We will review your pull request and merge it if it aligns with the project goals.
 
 ### Hacktoberfest Tips:
+
 - Make sure your pull request follows the [Hacktoberfest Guidelines](https://hacktoberfest.com/participation).
 - Be respectful and patient while waiting for your PR to be reviewed.
 
@@ -57,13 +60,11 @@ We’re excited to see your contributions and hope you enjoy being part of LisBo
 
 MIT License
 
-
-
 ## Author Info
+
 - Twitter - [@Ct0ic](https://twitter.com/Ct0ic)
 - GitHub - [ctoic](https://github.com/ctoic)
 - LinkedIn - [Ct0ic](https://www.linkedin.com/in/ct0ic/)
-
 
 ## Contributors
 
@@ -86,6 +87,20 @@ MIT License
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/2MJ-DEV">
+                    <img src="https://avatars.githubusercontent.com/u/146131402?v=4" width="100;" alt="2MJ-DEV"/>
+                    <br />
+                    <sub><b>JULES MUKADI</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/AdityaJ2305">
+                    <img src="https://avatars.githubusercontent.com/u/148325158?v=4" width="100;" alt="AdityaJ2305"/>
+                    <br />
+                    <sub><b>Aditya Jindal</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/AdityaBavadekar">
                     <img src="https://avatars.githubusercontent.com/u/64344960?v=4" width="100;" alt="AdityaBavadekar"/>
                     <br />
@@ -99,6 +114,8 @@ MIT License
                     <sub><b>Aman Kumar</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/VaradJadhav">
                     <img src="https://avatars.githubusercontent.com/u/96735054?v=4" width="100;" alt="VaradJadhav"/>
@@ -107,19 +124,10 @@ MIT License
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/IngaleChinmay04">
-                    <img src="https://avatars.githubusercontent.com/u/143017442?v=4" width="100;" alt="IngaleChinmay04"/>
+                <a href="https://github.com/sujalcharati">
+                    <img src="https://avatars.githubusercontent.com/u/146851304?v=4" width="100;" alt="sujalcharati"/>
                     <br />
-                    <sub><b>Chinmay Ingale</b></sub>
-                </a>
-            </td>
-		</tr>
-		<tr>
-            <td align="center">
-                <a href="https://github.com/2MJ-DEV">
-                    <img src="https://avatars.githubusercontent.com/u/146131402?v=4" width="100;" alt="2MJ-DEV"/>
-                    <br />
-                    <sub><b>JULES MUKADI</b></sub>
+                    <sub><b>Sujal charati</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -130,10 +138,10 @@ MIT License
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/sujalcharati">
-                    <img src="https://avatars.githubusercontent.com/u/146851304?v=4" width="100;" alt="sujalcharati"/>
+                <a href="https://github.com/IngaleChinmay04">
+                    <img src="https://avatars.githubusercontent.com/u/143017442?v=4" width="100;" alt="IngaleChinmay04"/>
                     <br />
-                    <sub><b>Sujal charati</b></sub>
+                    <sub><b>Chinmay Ingale</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -150,6 +158,15 @@ MIT License
                     <sub><b>Jay Shukla</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/MohitKambli">
+                    <img src="https://avatars.githubusercontent.com/u/31406633?v=4" width="100;" alt="MohitKambli"/>
+                    <br />
+                    <sub><b>Mohit Kambli</b></sub>
+                </a>
+            </td>
             <td align="center">
                 <a href="https://github.com/Vedantjn">
                     <img src="https://avatars.githubusercontent.com/u/76029713?v=4" width="100;" alt="Vedantjn"/>
@@ -157,8 +174,6 @@ MIT License
                     <sub><b>Nirmohi</b></sub>
                 </a>
             </td>
-		</tr>
-		<tr>
             <td align="center">
                 <a href="https://github.com/harshitkumargupta">
                     <img src="https://avatars.githubusercontent.com/u/149725714?v=4" width="100;" alt="harshitkumargupta"/>
@@ -177,4 +192,3 @@ MIT License
 	<tbody>
 </table>
 <!-- readme: contributors -end -->
-
