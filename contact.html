@@ -22,14 +22,14 @@
     <style>
       /* Enhanced animations and styling */
       .contact-hero {
-        background: linear-gradient(135deg, rgba(29, 185, 84, 0.1) 0%, rgba(17, 24, 39, 0.9) 100%);
+        background: linear-gradient(135deg, rgba(148, 215, 105, 0.1) 0%, rgba(17, 24, 39, 0.9) 100%);
         position: relative;
         overflow: hidden;
       }
       
       .floating-element {
         position: absolute;
-        background: rgba(29, 185, 84, 0.1);
+        background: rgba(148, 215, 105, 0.1);
         border-radius: 50%;
         animation: float 6s ease-in-out infinite;
       }
@@ -42,14 +42,14 @@
       .contact-card {
         backdrop-filter: blur(10px);
         background: rgba(31, 41, 55, 0.7);
-        border: 1px solid rgba(29, 185, 84, 0.2);
+        border: 1px solid rgba(148, 215, 105, 0.2);
         transition: all 0.3s ease;
       }
       
       .contact-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(29, 185, 84, 0.15);
-        border-color: rgba(29, 185, 84, 0.4);
+        box-shadow: 0 10px 25px rgba(148, 215, 105, 0.15);
+        border-color: rgba(148, 215, 105, 0.4);
       }
       
       .form-input {
@@ -58,8 +58,8 @@
       }
       
       .form-input:focus {
-        border-color: #1db954;
-        box-shadow: 0 0 0 3px rgba(29, 185, 84, 0.2);
+        border-color: var(--brand-primary);
+        box-shadow: 0 0 0 3px rgba(148, 215, 105, 0.2);
       }
       
       .social-icon {
@@ -75,7 +75,7 @@
       
       .social-icon:hover {
         transform: scale(1.1);
-        background: rgba(29, 185, 84, 0.2);
+        background: rgba(148, 215, 105, 0.2);
       }
       
       .pulse-animation {
@@ -117,7 +117,7 @@
       }
       
       .contact-option:hover {
-        background: rgba(29, 185, 84, 0.1);
+        background: rgba(148, 215, 105, 0.1);
         transform: translateX(5px);
       }
       
@@ -137,13 +137,13 @@
         right: 20px;
         width: 60px;
         height: 60px;
-        background: #1db954;
+        background: var(--brand-primary);
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        box-shadow: 0 4px 15px rgba(29, 185, 84, 0.4);
+        box-shadow: 0 4px 15px rgba(148, 215, 105, 0.4);
         z-index: 1000;
         transition: all 0.3s ease;
       }
@@ -166,12 +166,12 @@
         flex-direction: column;
         overflow: hidden;
         backdrop-filter: blur(10px);
-        border: 1px solid rgba(29, 185, 84, 0.2);
+        border: 1px solid rgba(148, 215, 105, 0.2);
       }
       
       .chat-header {
         padding: 15px;
-        background: rgba(29, 185, 84, 0.2);
+        background: rgba(148, 215, 105, 0.2);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -197,7 +197,7 @@
       }
       
       .user-message {
-        background: rgba(29, 185, 84, 0.3);
+        background: rgba(148, 215, 105, 0.3);
         align-self: flex-end;
         margin-left: auto;
         border-bottom-right-radius: 5px;
@@ -220,7 +220,7 @@
       }
       
       .chat-input button {
-        background: #1db954;
+        background: var(--brand-primary);
         border: none;
         border-radius: 50%;
         width: 40px;
@@ -279,7 +279,7 @@
       <div
         class="spinner-border"
         role="status"
-        style="width: 4rem; height: 4rem; color: #1db954"
+        style="width: 4rem; height: 4rem; color: var(--brand-primary)"
       >
         <span class="visually-hidden">Loading...</span>
       </div>

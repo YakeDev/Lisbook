@@ -58,24 +58,23 @@
     
     <!-- Search and Filter Section -->
     <section class="search-filter-section">
-        <div class="container mx-auto px-4 py-8">
+        <div class="container">
             <!-- Search and Filter Container -->
-            <div class="search-filter-wrapper max-w-7xl mx-auto">
+            <div class="search-filter-wrapper">
                 <!-- Search Bar -->
                 <div class="search-container">
-                    <label class="block text-xs font-medium text-gray-400 mb-2 uppercase tracking-wide">Search</label>
-                    <div class="search-wrapper flex items-center gap-4">
+                    <label>Recherche</label>
+                    <div class="search-wrapper">
                         <!-- Search Icon -->
                         <div class="search-icon-container">
-                            <i class="bi bi-search text-gray-400 text-xl"></i>
+                            <i class="bi bi-search"></i>
                         </div>
                         <!-- Search Input -->
-                        <div class="search-input-container flex-1 relative">
+                        <div class="search-input-container">
                             <input type="text" 
                                    id="searchInput" 
-                                   placeholder="Search by title, author, or genre..." 
-                                   class="w-full px-4 py-2 pl-4 pr-12 bg-gray-800/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500/20 transition-all text-base backdrop-blur-sm">
-                            <button id="clearSearch" class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white hidden p-1 rounded-full hover:bg-gray-700 transition-all">
+                                   placeholder="Rechercher par titre, auteur ou genre..." >
+                            <button id="clearSearch" class="hidden">
                                 <i class="bi bi-x-lg text-sm"></i>
                             </button>
                         </div>
@@ -84,42 +83,42 @@
 
                 <!-- Filter Controls -->
                 <div class="filter-container">
-                    <div class="filter-wrapper flex flex-wrap gap-4">
+                    <div class="filter-wrapper">
                         <!-- Genre Filter -->
                         <div class="filter-group">
-                            <label class="block text-xs font-medium text-gray-400 mb-2 uppercase tracking-wide">Genre</label>
-                            <select id="genreFilter" class="bg-gray-800/50 border border-gray-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500/20 transition-all min-w-[140px] text-sm backdrop-blur-sm">
-                                <option value="">All Genres</option>
+                            <label>Genre</label>
+                            <select id="genreFilter">
+                                <option value="">Tous les genres</option>
                             </select>
                         </div>
 
                         <!-- Duration Filter -->
                         <div class="filter-group">
-                            <label class="block text-xs font-medium text-gray-400 mb-2 uppercase tracking-wide">Duration</label>
-                            <select id="durationFilter" class="bg-gray-800/50 border border-gray-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500/20 transition-all min-w-[150px] text-sm backdrop-blur-sm">
-                                <option value="">Any Duration</option>
-                                <option value="short">Short (< 4h)</option>
+                            <label>Duration</label>
+                            <select id="durationFilter">
+                                <option value="">Any length</option>
+                                <option value="short">Short (&lt; 4h)</option>
                                 <option value="medium">Medium (4-8h)</option>
-                                <option value="long">Long (> 8h)</option>
+                                <option value="long">Long (&gt; 8h)</option>
                             </select>
                         </div>
 
                         <!-- Sort Options -->
                         <div class="filter-group">
-                            <label class="block text-xs font-medium text-gray-400 mb-2 uppercase tracking-wide">Sort By</label>
-                            <select id="sortFilter" class="bg-gray-800/50 border border-gray-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500/20 transition-all min-w-[140px] text-sm backdrop-blur-sm">
-                                <option value="title">Title A-Z</option>
-                                <option value="author">Author A-Z</option>
+                            <label>Trier par</label>
+                            <select id="sortFilter">
+                                <option value="title">Titre A-Z</option>
+                                <option value="author">Auteur A-Z</option>
                                 <option value="genre">Genre</option>
                                 <option value="popularity">Popularity</option>
-                                <option value="newest">Newest First</option>
+                                <option value="newest">Newest first</option>
                             </select>
                         </div>
 
                         <!-- Clear Filters -->
                         <div class="filter-group">
-                            <button id="clearFilters" class="px-4 py-2 bg-gray-800/50 hover:bg-gray-600/50 text-white rounded-lg transition-all font-medium text-sm backdrop-blur-sm border border-gray-600 hover:border-green-500">
-                                <i class="bi bi-arrow-clockwise me-1" style="font-size: 0.9rem;"></i>Clear
+                            <button id="clearFilters">
+                                <i class="bi bi-arrow-clockwise me-1" style="font-size: 0.9rem;"></i>Reset
                             </button>
                         </div>
                     </div>
@@ -133,18 +132,18 @@
     
     <!-- Results Count -->
     <div class="results-info">
-        <p id="resultsCount" class="text-gray-400 text-center text-sm"></p>
+        <p id="resultsCount"></p>
     </div>
 
     <!-- Recommendations Section -->
     <section id="recommendationsSection" class="recommendations-section hidden">
-        <div class="container mx-auto px-4 py-12">
-            <div class="text-center mb-8">
-                <h2 class="text-3xl font-bold text-white mb-3">
-                    <i class="bi bi-lightbulb me-3 text-green-500"></i>
-                    You May Also Like
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2>
+                    <i class="bi bi-lightbulb me-2"></i>
+                    Suggestions pour vous
                 </h2>
-                <p class="text-gray-400 text-lg">Discover more audiobooks based on your interests</p>
+                <p>Discover more audiobooks curated just for you.</p>
             </div>
             <div id="recommendationsContainer" class="recommendations-grid">
                 <!-- Recommendations will be populated here -->

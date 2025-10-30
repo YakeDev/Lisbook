@@ -56,10 +56,10 @@
 /* Camera Preview */
 .camera-preview-container {
   position: relative;
-  background: #000;
+  background: rgba(8, 13, 9, 0.85);
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--color-card-shadow);
 }
 
 #camera-preview {
@@ -89,24 +89,24 @@
   height: 400px;
   border: 3px solid var(--color-primary);
   border-radius: 10px;
-  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 9999px rgba(7, 11, 8, 0.6);
   animation: scanPulse 2s infinite;
 }
 
 @keyframes scanPulse {
   0%, 100% {
     border-color: var(--color-primary);
-    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5), 0 0 20px var(--color-primary);
+    box-shadow: 0 0 0 9999px rgba(7, 11, 8, 0.6), 0 0 22px rgba(148, 215, 105, 0.65);
   }
   50% {
-    border-color: #fff;
-    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5), 0 0 30px var(--color-primary);
+    border-color: rgba(236, 248, 230, 0.9);
+    box-shadow: 0 0 0 9999px rgba(7, 11, 8, 0.6), 0 0 32px rgba(148, 215, 105, 0.85);
   }
 }
 
 .scan-instruction {
-  color: #fff;
-  background: rgba(0, 0, 0, 0.7);
+  color: var(--color-text-primary);
+  background: rgba(12, 19, 15, 0.75);
   padding: 10px 20px;
   border-radius: 20px;
   margin-top: 20px;
@@ -195,16 +195,16 @@
 .btn-success {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
-  color: #000;
+  color: #0b120c;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 
 .btn-success:hover {
-  background-color: #8bc34a;
-  border-color: #8bc34a;
+  background-color: var(--brand-primary-strong);
+  border-color: var(--brand-primary-strong);
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(167, 224, 120, 0.4);
+  box-shadow: 0 12px 24px rgba(148, 215, 105, 0.35);
 }
 
 .btn-outline-success {
@@ -215,17 +215,17 @@
 .btn-outline-success:hover {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
-  color: #000;
+  color: #0b120c;
 }
 
 .btn-outline-light {
-  border-color: var(--color-text);
-  color: var(--color-text);
+  border-color: var(--color-text-secondary);
+  color: var(--color-text-secondary);
 }
 
 .btn-outline-light:hover {
-  background-color: var(--color-text);
-  color: var(--color-background);
+  background-color: var(--color-text-secondary);
+  color: #0b120c;
 }
 
 /* Feature Icons */

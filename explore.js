@@ -365,7 +365,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const icon = document.createElement('i');
         icon.className = 'bi bi-book';
         icon.style.fontSize = iconSize;
-        icon.style.color = '#10b981';
+        icon.style.color = 'var(--brand-primary)';
         icon.style.marginBottom = iconMargin;
 
         const label = document.createElement('p');

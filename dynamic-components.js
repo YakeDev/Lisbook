@@ -2,6 +2,8 @@
 // This file handles loading navbar and footer components dynamically across all pages
 
 document.addEventListener("DOMContentLoaded", function () {
+    document.documentElement.setAttribute("lang", "en");
+    
     // Load navbar
     loadNavbar();
     
@@ -53,7 +55,7 @@ function loadNavbar() {
       <!-- Navigation Links -->
       <a href="./index.html" class="nav-link">Home</a>
       <a href="./explore.html" class="nav-link" id="explore">Explore</a>
-      <a href="./scan.html" class="nav-link">Scan Book</a>
+      <a href="./scan.html" class="nav-link">Scan</a>
       <a href="./about.html" class="nav-link" id="about">About</a>
       <a href="./contact.html" class="nav-link">Contact</a>
       <a href="./faq.html" class="nav-link">FAQs</a>
@@ -84,7 +86,7 @@ function loadNavbar() {
       <!-- Language Selector -->
       <div class="language-selector">
         <select id="language" onchange="changeLanguage()" aria-label="Select language">
-          <option value="en">English</option>
+          <option value="en" selected>English</option>
           <option value="fr">Français</option>
           <option value="es">Español</option>
           <option value="zh">简体中文</option>
@@ -93,7 +95,7 @@ function loadNavbar() {
 
       <!-- Auth Buttons -->
       <button id="signupButton" class="btn-auth">Sign up</button>
-      <button id="loginButton" class="btn-auth">Login</button>
+      <button id="loginButton" class="btn-auth">Log in</button>
     </nav>
 
     <!-- Mobile Menu Toggle -->
@@ -130,13 +132,13 @@ function loadFooter() {
         </a>
         <div class="brand-text">
           <div class="brand-title">Lisbook</div>
-          <p class="brand-tagline">LisBook is a straightforward audiobook player designed for simplicity and ease of use.</p>
+          <p class="brand-tagline">LisBook is a streamlined audiobook player built for focus and calm.</p>
         </div>
       </div>
     </div>
 
     <div class="col mb-3">
-      <h5 class="fw-bold h5 mb-3 text-uppercase footer-col-title">Important Link</h5>
+      <h5 class="fw-bold h5 mb-3 text-uppercase footer-col-title">Useful links</h5>
       <ul class="nav flex-column ms-2">
         <li class="nav-item mb-2"><a href="index.html" class="p-0">Home</a></li>
         <li class="nav-item mb-2"><a href="about.html" class="p-0">About</a></li>
@@ -149,11 +151,11 @@ function loadFooter() {
     <div class="col mb-3">
       <h5 class="fw-bold h5 mb-3 text-uppercase footer-col-title">Features</h5>
       <ul class="nav flex-column ms-2">
-        <li class="nav-item mb-2"><a href="#" class="p-0">Play/Pause</a></li>
-        <li class="nav-item mb-2"><a href="#" class="p-0">Skip Chapters</a></li>
-        <li class="nav-item mb-2"><a href="#" class="p-0">Change Speed</a></li>
-        <li class="nav-item mb-2"><a href="#" class="p-0">Change Volume</a></li>
-        <li class="nav-item mb-2"><a href="#" class="p-0">Change Theme</a></li>
+        <li class="nav-item mb-2"><a href="#" class="p-0">Play / Pause</a></li>
+        <li class="nav-item mb-2"><a href="#" class="p-0">Skip chapters</a></li>
+        <li class="nav-item mb-2"><a href="#" class="p-0">Adjust speed</a></li>
+        <li class="nav-item mb-2"><a href="#" class="p-0">Tune volume</a></li>
+        <li class="nav-item mb-2"><a href="#" class="p-0">Light / dark theme</a></li>
       </ul>
     </div>
 
@@ -177,14 +179,14 @@ function loadFooter() {
 
     <!-- Newsletter Section -->
     <div class="col mb-3">
-      <h5 class="fw-bold h5 mb-3 text-uppercase footer-col-title">Stay Updated</h5>
-      <p class="mb-3">Subscribe to our newsletter for updates on new features and audiobooks.</p>
+      <h5 class="fw-bold h5 mb-3 text-uppercase footer-col-title">Stay in the loop</h5>
+      <p class="mb-3">Get fresh picks and product news straight to your inbox.</p>
       <form id="newsletterForm" class="d-flex flex-column gap-2">
         <input 
           type="email" 
           class="form-control py-2 px-3" 
           id="newsletterEmail" 
-          placeholder="Enter your email"
+          placeholder="Your email address"
           required
         >
         <div class="invalid-feedback">Please provide a valid email address.</div>
@@ -196,7 +198,7 @@ function loadFooter() {
 </div>
 
 <div class="bg-white-900 p-4 text-center">
-  <div class="text-gray-500">&copy; 2024 Lisbook | All Rights Reserved</div>
+  <div class="text-gray-500">&copy; 2024 Lisbook | All rights reserved</div>
 </div>
         `;
 
@@ -212,30 +214,53 @@ function initializeTheme() {
     const sunIcon = document.getElementById('sun-icon');
     const moonIcon = document.getElementById('moon-icon');
 
-    if (themeToggle && sunIcon && moonIcon) {
-        themeToggle.addEventListener('click', function() {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
-            // Update theme
-            document.documentElement.setAttribute('data-theme', newTheme);
+    function syncIcons(theme) {
+        if (!sunIcon || !moonIcon) return;
+        if (theme === 'dark') {
+            sunIcon.classList.remove('hidden');
+            moonIcon.classList.add('hidden');
+        } else {
+            sunIcon.classList.add('hidden');
+            moonIcon.classList.remove('hidden');
+        }
+    }
+
+    function applyTheme(theme) {
+        if (typeof setTheme === 'function') {
+            setTheme(theme);
+        } else {
+            document.documentElement.setAttribute('data-theme', theme);
             document.body.classList.remove('light-theme', 'dark-theme');
-            document.body.classList.add(newTheme + '-theme');
-            
-            // Update icons
-            if (newTheme === 'light') {
-                sunIcon.classList.remove('hidden');
-                moonIcon.classList.add('hidden');
-            } else {
-                sunIcon.classList.add('hidden');
-                moonIcon.classList.remove('hidden');
-            }
-            
-            // Save to localStorage
+            document.body.classList.add(`${theme}-theme`);
             try {
-                localStorage.setItem('theme', newTheme);
-            } catch (e) {
-                console.warn('Could not save theme to localStorage', e);
+                localStorage.setItem('theme', theme);
+            } catch (error) {
+                console.warn('Could not persist theme', error);
+            }
+        }
+        syncIcons(theme);
+    }
+
+    const storedTheme = (() => {
+        try {
+            return localStorage.getItem('theme') || 'dark';
+        } catch {
+            return 'dark';
+        }
+    })();
+
+    const initialTheme = document.documentElement.getAttribute('data-theme') || storedTheme;
+    applyTheme(initialTheme);
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme') || 'dark';
+            const next = current === 'dark' ? 'light' : 'dark';
+            if (typeof toggleTheme === 'function') {
+                toggleTheme();
+                syncIcons(next);
+            } else {
+                applyTheme(next);
             }
         });
     }

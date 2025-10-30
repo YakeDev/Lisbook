@@ -32,7 +32,7 @@
       }
 
       body.light-theme header .logo-text {
-        color: #16a34a !important;
+        color: var(--brand-primary) !important;
       }
 
       body.light-theme #signup-container {
@@ -52,7 +52,7 @@
       }
 
       body.light-theme #signup-container .text-green-500 {
-        color: #16a34a !important;
+        color: var(--brand-primary) !important;
       }
       body.light-theme #signup-container label,
       body.light-theme #signup-container .text-gray-300 {
@@ -90,21 +90,8 @@
       })();
     </script>
     <!-- Header -->
-    <header class="sticky top-0 z-20 bg-zinc-900 py-8 px-16 shadow-sm">
-      <nav>
-          <a class="flex items-center gap-3 text-2xl text-lime-500 logo-text font-bold" href="../index.html">
-        <img
-          src="../Images/lisbook-logo-1.png"
-          alt="Logo"
-          width="40"
-          height="auto"
-          class="align-text-center me-2"
-        />
-        Lisbook
-      </a>
-      </nav>
-    </header>
-    <!-- Signup Form Container -->
+        <div id="navbar-placeholder"></div>
+<!-- Signup Form Container -->
   <div id="signup-container" class="w-full max-w-md mx-auto mt-16 bg-white/5 backdrop-blur-sm rounded-xl shadow-lg p-8">
       <h2 class="text-center text-2xl font-semibold text-green-500 mb-6">Create Account</h2>
       <form id="signupForm" action="#" method="POST" class="space-y-5">
@@ -180,5 +167,7 @@
         alert("Signup form submitted! (No backend connected)");
       });
     </script>
+        <script src="dynamic-components.js"></script>
+
   </body>
 </html>

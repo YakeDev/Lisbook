@@ -452,5 +452,9 @@ function applyTranslations(language) {
 
 document.addEventListener('DOMContentLoaded', function() {
   const defaultLanguage = 'en';
+  const languageSelect = document.getElementById('language');
+  if (languageSelect) {
+    languageSelect.value = defaultLanguage;
+  }
   applyTranslations(defaultLanguage);
 });

@@ -97,77 +97,183 @@
  
 
   <!-- Hero Section -->
-  <section class="hero-section bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-center py-20 px-4 relative overflow-hidden">
-    <div class="hero-bg-element hero-book-icon absolute top-10 left-10 opacity-20 animate-float">📚</div>
-    <div class="hero-bg-element hero-headphone-icon absolute top-20 right-20 opacity-20 animate-float-delayed">🎧</div>
-    <div class="hero-bg-element hero-star-icon absolute bottom-20 left-20 opacity-20 animate-float">⭐</div>
-    <div class="hero-bg-element hero-music-icon absolute bottom-10 right-10 opacity-20 animate-float-delayed">🎵</div>
-
-    <div class="container mx-auto max-w-4xl relative z-10">
-      <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in-up">Welcome to <span
-          class="text-green-400 animate-pulse">Lisbook</span></h1>
-      <div class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto animate-fade-in-up-delayed">
-        <span id="typed-text"></span>
-      </div>
-      <div class="animate-fade-in-up-delayed-2">
-        <a href="./explore.html"
-          class="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-full transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-green-300 animate-bounce-subtle">
-          Explore Books
-        </a>
-        <p class="text-sm text-gray-400 mt-4 animate-fade-in">Discover amazing stories and knowledge</p>
+  <section class="hero-section">
+    <div class="hero-orb hero-orb--primary animate-float"></div>
+    <div class="hero-orb hero-orb--secondary animate-float-delayed"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="hero-badge">Listening without distraction</span>
+          <h1 class="hero-title">Lisbook, your calm audio companion</h1>
+          <p class="hero-subtitle">
+            <span id="typed-text"></span>
+          </p>
+          <div class="hero-actions">
+            <a href="./explore.html" class="cta-primary">
+              Browse the library
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+            <a href="#top-audio-books" class="cta-secondary">
+              View what’s trending
+              <i class="bi bi-compass"></i>
+            </a>
+          </div>
+          <ul class="hero-highlights">
+            <li>
+              <i class="bi bi-headphones"></i>
+              <span>Immersive playback with smooth speed control</span>
+            </li>
+            <li>
+              <i class="bi bi-layers"></i>
+              <span>Editorial collections for every mood</span>
+            </li>
+            <li>
+              <i class="bi bi-emoji-smile"></i>
+              <span>A refined interface designed for comfortable listening</span>
+            </li>
+          </ul>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="hero-stat-value">120+</span>
+              <span class="hero-stat-label">Audio titles ready to play</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-value">8</span>
+              <span class="hero-stat-label">Genres refreshed</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-value">24/7</span>
+              <span class="hero-stat-label">Continuous listening</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-preview">
+          <div class="hero-preview-card">
+            <div class="hero-preview-header">
+              <div class="hero-preview-cover">
+                <img src="Images/Lisbook-App-ScreeShot.jpg" alt="Preview of Lisbook player" loading="lazy">
+              </div>
+              <div class="hero-preview-meta">
+                <h3>Morning Stories</h3>
+                <span>Personalised mix</span>
+              </div>
+            </div>
+            <div class="hero-preview-wave">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="hero-preview-footer">
+              <span>Time remaining · 18 min</span>
+              <span class="status-badge">
+                <i class="bi bi-broadcast-pin"></i> Now playing
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-      <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-      </svg>
+  <section class="py-5">
+    <div class="container">
+      <div class="section-shell">
+        <div class="section-heading text-center">
+          <span class="section-kicker">Built for listeners</span>
+          <h2 class="section-title">A seamless listening experience</h2>
+          <p class="section-description mx-auto">
+            Lisbook keeps a calm visual language so you can focus on stories, discover new voices and share the audio that moves you.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon">🎧</div>
+            <h3>Comfortable listening</h3>
+            <p>Access a clean player with intuitive controls, flexible speed and clear markers from the very first tap.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">🌿</div>
+            <h3>Soothing atmosphere</h3>
+            <p>A green and graphite palette carried across the app keeps stories centre stage without visual fatigue.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">🚀</div>
+            <h3>Guided discovery</h3>
+            <p>Smart filters, contextual recommendations and fluid navigation help you land on the next great listen fast.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">🤝</div>
+            <h3>Open & collaborative</h3>
+            <p>Built as an open project so contributors can expand the catalogue and experiences for everyone.</p>
+          </article>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Main Content -->
   <main class="container my-5">
     <!-- Top Audio Books Section -->
-    <section class="rounded-5 p-5 my-5">
-      <h2 class="display-5 page-title fw-semibold" id="top-audio-books">Top Audio Books</h2>
+    <section class="section-shell top-audio-wrapper my-5" id="top-audio-books">
+      <div class="section-heading">
+        <span class="section-kicker">Spotlight this week</span>
+        <h2 class="section-title">Top Audio Books</h2>
+        <p class="section-description">
+          A living showcase of the titles our community is playing the most. Check back often—this carousel keeps evolving.
+        </p>
+      </div>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-4 align-items-stretch">
         <!-- Book cards will be populated here -->
       </div>
     </section>
 
     <!-- Embed gd.html -->
-    <section class="row rounded-5 p-5 mt-5">
-      <iframe id="gd-iframe" src="gd.html" class="w-full" height="850px" frameborder="0"></iframe>
+    <section class="section-shell section-shell--muted my-5">
+      <div class="section-heading">
+        <span class="section-kicker">Interactive guide</span>
+        <h2 class="section-title">See Lisbook in action</h2>
+        <p class="section-description">
+          Dive into the interface to explore core features, playlists and the cover scanner before you press play.
+        </p>
+      </div>
+      <div class="mt-4">
+        <iframe id="gd-iframe" src="gd.html" class="w-100 rounded-4" height="820" frameborder="0" loading="lazy"></iframe>
+      </div>
     </section>
 
     <!-- Book Navigation Buttons -->
-    <section class="d-flex justify-content-evenly align-items-stretch rounded-5 p-4 my-5 gx-5 text-center">
-      <a href="./index.html"><i class="fa-solid fa-arrow-left text-green-500 text-5xl"></i></a>
-      <a href="./pbd.html"><i class="fa-solid fa-arrow-right text-green-500 text-5xl"></i></a>
+    <section class="section-shell section-shell--compact quick-nav my-5">
+      <div class="quick-nav-label">
+        <span>Quick navigation</span>
+        <span>Jump between pages in a click to keep exploring.</span>
+      </div>
+      <div class="quick-nav-actions">
+        <a href="./index.html" class="quick-nav-btn" aria-label="Previous page">
+          <i class="bi bi-arrow-left-short"></i>
+        </a>
+        <a href="./pbd.html" class="quick-nav-btn" aria-label="Next page">
+          <i class="bi bi-arrow-right-short"></i>
+        </a>
+      </div>
     </section>
 
     <!-- Comments Section -->
-    <section class="rounded-5 p-5 mt-5 w-full max-w-3xl mx-auto shadow-md shadow-green-400">
-      <div class="container mx-auto p-4 sm:p-6 rounded-lg flex flex-col items-center justify-center w-full">
-        <h2 class="text-lg sm:text-xl md:text-2xl page-title fw-semibold mb-6 text-center" id="share">
-          Share Your Comments
-        </h2>
-        <form id="comment-form" class="space-y-4 w-full">
-          <div>
-            <input type="text" id="username" class="form-control w-full mt-2 rounded-md text-green-300 p-2 text-sm sm:text-base" placeholder="UserName" />
-          </div>
-          <div>
-            <textarea id="comment" class="form-control w-full mt-2 rounded-md bg-body-tertiary border p-2 text-sm sm:text-base" placeholder="Comment What You felt" rows="3" required></textarea>
-          </div>
-          <div class="text-center">
-            <button type="submit" class="bg-green-500 text-white py-2 px-4 sm:px-6 rounded-md hover:bg-green-600 text-sm sm:text-base" id="share2">
-              Share comment
-            </button>
-          </div>
-        </form>
-
-        <div id="comments-list" class="mt-10 space-y-4 w-full"></div>
+    <section class="section-shell section-shell--narrow my-5" id="share">
+      <div class="section-heading text-center">
+        <span class="section-kicker">Community notes</span>
+        <h2 class="section-title">Tell us what you’re listening to</h2>
+        <p class="section-description mx-auto">
+          Share a recommendation, a favourite narrator or a simple hello—the Lisbook community is always ready for new voices.
+        </p>
       </div>
+      <form id="comment-form" class="comment-form-grid mt-4">
+        <input type="text" id="username" class="form-control" placeholder="Your name or handle" />
+        <textarea id="comment" class="form-control" placeholder="What would you like to share?" rows="3" required></textarea>
+        <button type="submit" class="btn-submit" id="share2">
+          <i class="bi bi-chat-dots"></i>
+          Post my comment
+        </button>
+      </form>
+      <div id="comments-list"></div>
     </section>
   </main>
 
@@ -187,7 +293,12 @@
       }
     }
 
-    document.getElementById('language').addEventListener('change', changeLanguage);
+    document.addEventListener('DOMContentLoaded', () => {
+      const languageSelect = document.getElementById('language');
+      if (languageSelect) {
+        languageSelect.addEventListener('change', changeLanguage);
+      }
+    });
   </script>
   <!-- Footer Placeholder -->
   <div id="footer-placeholder" class="mt-auto"></div>
@@ -220,7 +331,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const typedTextElement = document.getElementById('typed-text');
-      const text = "Discover and enjoy amazing audio books from around the world. Immerse yourself in captivating stories and knowledge at your fingertips.";
+      const text = "Discover carefully curated audiobooks, adjust the tempo, save favourites and resume listening wherever you are.";
 
       let index = 0;
       function typeWriter() {

@@ -1,3 +1,7 @@
+if (!document.documentElement.getAttribute("lang") || document.documentElement.getAttribute("lang") === "en") {
+    document.documentElement.setAttribute("lang", "fr");
+}
+
 // Utility function to display a custom error popup (replacing native alert)
 function showErrorPopup(message) {
     const overlay = document.createElement("div");
